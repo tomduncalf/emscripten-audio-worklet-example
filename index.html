@@ -11,12 +11,13 @@
   <button id="startButton">Start Oscillator</button>
   <br><br>
   <label for="frequencySlider">Frequency: </label>
-  <input type="range" id="frequencySlider" min="20" max="2000" value="440">
+  <input type="range" id="frequencySlider" min="1" max="40" value="20">
   <br><br>
   <label for="phaseSlider">Phase: </label>
   <input type="range" id="phaseSlider" min="-3.14" max="3.14" step="0.01" value="0">
   <br><br>
   <button id="resetPhaseButton">Reset Phase</button>
+  <canvas id="visualizer" width="500" height="200"></canvas>
   <script src="main.js"></script>
 </body>
 
