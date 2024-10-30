@@ -10,13 +10,13 @@ I had a project in mind for this but I might never get to it. The code won't win
 
 ## Files
 
-`c++/oscillator.cpp` contains the worklet code, which is the interesting bit.
-`oscillator.js` contains the setup JS.
+- `c++/oscillator.cpp` contains the worklet code, which is the interesting bit.
+- `oscillator.js` contains the setup JS, which creates the audio graph and hooks everyrthing up.
 
 ## Building
 
-Run `./build.sh` to build the worklet.
+Run `./build.sh` to build the worklet. The build files end up in the top-level directory, it's probably possible to make them be written to a different directory!
 
 ## Serving
 
-The worklet needs to be served with certain headers due to the use of SharedArrayBuffer. There's a simple Node server in `server/server.js` which can be used to serve it locally, like `node server/server.js`.
+The worklet needs to be served with certain headers due to the use of `SharedArrayBuffer`. There's a simple Node server in `server/server.js` which can be used to serve it locally, like `node server/server.js`.
