@@ -11,7 +11,7 @@ I had a project in mind for this but I might never get to it. The code won't win
 ## Files
 
 - `c++/oscillator.cpp` contains the worklet code, which is the interesting bit.
-- `oscillator.js` contains the setup JS, which creates the audio graph and hooks everyrthing up.
+- `main.js` contains the setup JS, which creates the audio graph and hooks everyrthing up.
 
 ## Building
 

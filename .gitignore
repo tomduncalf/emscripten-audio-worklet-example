@@ -1,4 +1,5 @@
 node_modules
 oscillator.aw.js
+oscillator.js
 oscillator.wasm
 oscillator.ww.js
