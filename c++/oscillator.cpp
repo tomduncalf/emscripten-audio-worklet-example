@@ -13,15 +13,7 @@
 
 typedef void (*js_cb_func)(int data);
 
-// Headers for functions exposed to JS via Emscripten
-extern "C" {
-EMSCRIPTEN_KEEPALIVE void reset_phase(float newPhase);
-EMSCRIPTEN_KEEPALIVE void module_init(EMSCRIPTEN_WEBAUDIO_T audio_ctx,
-                                      uint32_t sample_rate,
-                                      js_cb_func init_js_cb, js_cb_func _js_cb);
-}
 namespace audio {
-
 // This was written by Claude mainly :) Basic oscillator class
 class Oscillator {
 private:
