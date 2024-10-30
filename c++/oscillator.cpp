@@ -116,8 +116,8 @@ EM_BOOL awp_process_cb(int numInputs, const AudioSampleFrame *inputs,
 void awp_create_cb(EMSCRIPTEN_WEBAUDIO_T audio_ctx, EM_BOOL success,
                    void *init_js_cb) {
 #ifdef TD_DEBUG
-  printf("tsig_awp_create_cb(audio_ctx=%d, success=%d, init_js_cb=%p)\n",
-         audio_ctx, success, init_js_cb);
+  printf("awp_create_cb(audio_ctx=%d, success=%d, init_js_cb=%p)\n", audio_ctx,
+         success, init_js_cb);
 #endif /* TD_DEBUG */
 
   if (!success)
@@ -146,7 +146,7 @@ void awp_create_cb(EMSCRIPTEN_WEBAUDIO_T audio_ctx, EM_BOOL success,
 void aw_thread_init_cb(EMSCRIPTEN_WEBAUDIO_T audio_ctx, EM_BOOL success,
                        void *init_js_cb) {
 #ifdef TD_DEBUG
-  printf("tsig_aw_thread_init_cb(audio_ctx=%d, success=%d, init_js_cb=%p)\n",
+  printf("aw_thread_init_cb(audio_ctx=%d, success=%d, init_js_cb=%p)\n",
          audio_ctx, success, init_js_cb);
 #endif /* TD_DEBUG */
 
