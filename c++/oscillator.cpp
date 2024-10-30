@@ -142,7 +142,7 @@ void awp_create_cb(EMSCRIPTEN_WEBAUDIO_T audio_ctx, EM_BOOL success,
 }
 
 // This is called once the worklet thread is initialized, and creates the
-// worklet
+// audio worklet
 void aw_thread_init_cb(EMSCRIPTEN_WEBAUDIO_T audio_ctx, EM_BOOL success,
                        void *init_js_cb) {
 #ifdef TD_DEBUG
@@ -179,14 +179,14 @@ void aw_thread_init_cb(EMSCRIPTEN_WEBAUDIO_T audio_ctx, EM_BOOL success,
 
 } // namespace audio
 
-// C API implementations
+// C functions which are exposed to JS
 extern "C" {
 EMSCRIPTEN_KEEPALIVE void reset_phase(float newPhase) {
   audio::oscBank.resetPhase(0, newPhase);
 }
 
 /**
- * Initialize the Wasm module. This is called from JS.
+ * Initialize the WasWASM module
  *
  * @param audio_ctx Handle of a Web Audio API AudioContext.
  * @param sample_rate Sample rate of the AudioContext.
